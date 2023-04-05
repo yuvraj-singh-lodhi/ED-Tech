@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ED-Tech3</title>
+  <link rel="icon" href="/image/graduation-cap-solid.svg" />
+  <link rel="stylesheet" href="maincss.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ 
+    <div class="MainNav">
+    <div class="header-left">
+      <a href="#" class="menu-btn">
+        <div class="ED-Tech3-logo">
+          <img src="image/1.jpg" />
+        </div>
+      </a>
+      <div href="#Tutorial" class="menu-btn" id="Tutorial-btn">
+        Tutorial
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div href="#Refrences" class="menu-btn" id="Refrences-btn">
+        Refrences
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div href="#Exercises" class="menu-btn" id="Exercises-btn">
+        Exercises
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div href="#Video" class="menu-btn" id="video-btn">
+        Video
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+
+
+      <!-- mobile view -->
+      <div class="menu-btn" id="menu-btn-mobile">
+        Menu
+        <i class="fa-solid fa-caret-down" class="menu-btn"></i>
+      </div>
+    </div>
+    <div class="header-right">
+
+      <div class="togglelightDark btn">
+        <i class="fa-solid fa-circle-half-stroke" id="lightDark-btn"></i>
+      </div>
+      <div class="togglesearch">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </div>
+      <a href="#login" class="btn btn-link bg-black login">Login</a>
+
+      <a href="#signup" class="btn btn-link bg-blue  login">Signup</a>
+    </div>
+    </div>
+
+<!--mobile menu bar-->
+
+  <div class="mobile-menu-container" id="mobile-menu-nav">
+
+    <div class="mobile-menu-close-btn">
+      <button id="mobile-nav-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul>
+      <a href="#Tutorial" class="menu-btn-mobile_menu">
+        Tutorial
+        <i class="fa-solid fa-caret-down"></i>
+      </a>
+          <div class="nested-navigation-container-content"></div>
+
+      <a href="#Refrences" class="menu-btn-mobile_menu">
+        Refrences
+        <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <a href="#Exercises" class="menu-btn-mobile_menu">
+          Exercises
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <a href="#Video" class="menu-btn-mobile_menu">
+          Video
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
+    </ul>
+  </div>
+
+
+  <!-- this is the nested navigation bar -->
+
+<div class="nested-navigation-container nested-navigation_hidden" id="nested-navigation-container_id">
+  <div class="nested-navigation-container-close-btn" id="nested-navigation-close-btn">
+    <button ><i class="fa-solid fa-xmark" ></i></button>
+  </div>
+
+
+  <div class="nested-navigation-container-content" id="nested-navigation-container-contentID">
+    <!--render the menu of all here-->>
+
+
+  </div>
+</div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
