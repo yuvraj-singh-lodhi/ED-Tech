@@ -1,4 +1,5 @@
 import { Tutorial } from "./Data/mainDB.js"
+import { References } from "./Data/References.js"
 
 
 // section mobile btn
@@ -88,7 +89,7 @@ Tutorial.DataAnalytics.menu.forEach(el =>{
 
 NestedNavigationContainerContentID.innerHTML=`
     ${NestedNavigationHeading}
-     <div class="nested-navigation-container_content_data">
+    <div class="nested-navigation-container_content_data">
             <div class="nested-navigation_item">
                  ${NestedNavigationTab1}
             </div>
@@ -103,3 +104,16 @@ NestedNavigationContainerContentID.innerHTML=`
             </div>
     </div>
 `
+/* Tutorial_menuLink_mobile*/
+const TutorialMenuLinkMobileEl= document.getElementById("Tutorial_menuLink_mobile")
+let TutorialMenuMobileEl = document.getElementById("Tutorial_menu_mobile")
+
+
+let tutorialMenuTab_moblie = NestedNavigationHeading + NestedNavigationTab1 + NestedNavigationTab2 + NestedNavigationTab3 + NestedNavigationTab4
+TutorialMenuLinkMobileEl.addEventListener("click",()=>{
+    TutorialMenuLinkMobileEl.classList.toggle("mobile_menu_Active")
+    TutorialMenuMobileEl.classList.toggle("mobile_menu_Active_Tutorial")
+
+    TutorialMenuMobileEl.innerHTML = tutorialMenuTab_moblie
+} ) 
+

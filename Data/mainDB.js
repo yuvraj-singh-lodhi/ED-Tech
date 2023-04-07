@@ -1,5 +1,5 @@
 export const Tutorial ={
-    name :"main",
+    name :"Tutorial",
     HTMLandCSS :{//this is an object 
         // inside this i will create another object
         name: "HTMLandCSS",
